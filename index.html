@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Básquet Shop</title>
   <meta name="description" content="Venta de elementos de básquet." />
-  <link rel="icon" href="favicon/pelota.ico" />
+  <link rel="icon" href="pelota.ico" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
 
       <article class="card">
         <div class="card__media">
-          <img class="card__img" src="imagenes/arodebasquet.jpg" alt="Aro de básquet" loading="lazy">
+          <img class="card__img" src="arodebasquet.jpg" alt="Aro de básquet" loading="lazy">
         </div>
         <div class="card__body">
           <h3 class="card__title">Aro de básquet</h3>
@@ -51,10 +51,9 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
-          <img class="card__img" src="imagenes/pelotadebasquet.jpg" alt="Pelota de básquet" loading="lazy">
+          <img class="card__img" src="pelotadebasquet.jpg" alt="Pelota de básquet" loading="lazy">
         </div>
         <div class="card__body">
           <h3 class="card__title">Pelota de básquet</h3>
@@ -71,10 +70,9 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
-          <img class="card__img" src="imagenes/camiseta.jpg" alt="Camiseta de básquet" loading="lazy">
+          <img class="card__img" src="camiseta.jpg" alt="Camiseta de básquet" loading="lazy">
         </div>
         <div class="card__body">
           <h3 class="card__title">Camiseta</h3>
@@ -91,10 +89,9 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
-          <img class="card__img" src="imagenes/zapatillas.jpg" alt="Zapatillas de básquet" loading="lazy">
+          <img class="card__img" src="zapatillas.jpg" alt="Zapatillas de básquet" loading="lazy">
         </div>
         <div class="card__body">
           <h3 class="card__title">Zapatillas</h3>
@@ -111,10 +108,9 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
-          <img class="card__img" src="imagenes/tobillera.jpg" alt="Tobillera" loading="lazy">
+          <img class="card__img" src="tobillera.jpg" alt="Tobillera" loading="lazy">
         </div>
         <div class="card__body">
           <h3 class="card__title">Tobillera</h3>
@@ -131,10 +127,9 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
-          <img class="card__img" src="imagenes/botella.jpg" alt="Botella de agua" loading="lazy">
+          <img class="card__img" src="botella.jpg" alt="Botella de agua" loading="lazy">
         </div>
         <div class="card__body">
           <h3 class="card__title">Botella de agua</h3>
@@ -164,7 +159,7 @@
       </details>
       <details>
         <summary>¿Qué métodos de pago aceptan?</summary>
-        <p>Aceptamos 3 y 6 cuotas con tarjetas de crédito, tarjetas de débito, bonificación de 15% con transferencias, depósitos bancarios y Mercado Pago.</p>
+        <p>Aceptamos tarjetas de crédito, débito, depósitos, transferencias y Mercado Pago.</p>
       </details>
       <details>
         <summary>¿Puedo devolver un producto?</summary>
@@ -190,21 +185,4 @@
     const closeBtn = document.getElementById('closeModal');
     const dialog = document.getElementById('dialog');
 
-    openBtn.addEventListener('click', () => {
-      dialog.style.display = 'flex';
-      dialog.querySelector('.modal__dialog').focus();
-    });
-    closeBtn.addEventListener('click', () => dialog.style.display = 'none');
-    window.addEventListener('click', (e) => { if(e.target === dialog) dialog.style.display = 'none'; });
-    window.addEventListener('keydown', (e) => { if(e.key === 'Escape') dialog.style.display = 'none'; });
-
-    document.querySelectorAll('.btn-comprar').forEach((btn, i) => {
-      btn.addEventListener('click', () => {
-        const select = document.querySelectorAll('.opciones-pago')[i];
-        select.hidden = !select.hidden;
-      });
-    });
-  </script>
-
-</body>
-</html>
+   
