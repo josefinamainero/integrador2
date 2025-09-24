@@ -27,7 +27,6 @@
     <section class="hero">
       <h1>Lanzamiento 2025</h1>
       <p>Descubrí nuestra nueva línea de productos de básquet. Calidad y diseño para todos.</p>
-      <button class="btn" id="openModal" aria-haspopup="dialog" aria-controls="dialog">Ver detalle</button>
     </section>
 
     <section id="productos" class="cards">
@@ -51,7 +50,6 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
           <img class="card__img" src="imagenes/pelotadebasquet.jpg" alt="Pelota de básquet" loading="lazy">
@@ -70,7 +68,6 @@
           </select>
         </div>
       </article>
-
 
       <article class="card">
         <div class="card__media">
@@ -91,7 +88,6 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
           <img class="card__img" src="imagenes/zapatillas.jpg" alt="Zapatillas de básquet" loading="lazy">
@@ -111,7 +107,6 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="card__media">
           <img class="card__img" src="imagenes/tobillera.jpg" alt="Tobillera" loading="lazy">
@@ -130,7 +125,6 @@
           </select>
         </div>
       </article>
-
 
       <article class="card">
         <div class="card__media">
@@ -175,29 +169,7 @@
 
   <footer role="contentinfo">© 2025 Básquet Shop — <a href="#top">Volver arriba</a></footer>
 
-  <div class="modal" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
-    <div class="modal__dialog">
-      <h2 id="dialogTitle">Detalle del lanzamiento</h2>
-      <p>Nueva colección de elementos de básquet con foco en calidad y diseño. Stock limitado.</p>
-      <div class="modal__footer">
-        <button class="btn" id="closeModal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-
   <script>
-    const openBtn = document.getElementById('openModal');
-    const closeBtn = document.getElementById('closeModal');
-    const dialog = document.getElementById('dialog');
-
-    openBtn.addEventListener('click', () => {
-      dialog.style.display = 'flex';
-      dialog.querySelector('.modal__dialog').focus();
-    });
-    closeBtn.addEventListener('click', () => dialog.style.display = 'none');
-    window.addEventListener('click', (e) => { if(e.target === dialog) dialog.style.display = 'none'; });
-    window.addEventListener('keydown', (e) => { if(e.key === 'Escape') dialog.style.display = 'none'; });
-
     document.querySelectorAll('.btn-comprar').forEach((btn, i) => {
       btn.addEventListener('click', () => {
         const select = document.querySelectorAll('.opciones-pago')[i];
