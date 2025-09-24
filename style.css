@@ -156,23 +156,80 @@ main {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 192, 203, 0.8); /* fondo rosa semi-transparente */
   z-index: 1200;
   align-items: center;
   justify-content: center;
 }
+
 .modal__dialog {
   background: #fff;
   width: min(92vw, 520px);
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+  font-style: italic; /* letra cursiva */
+  text-align: center;
 }
+
 .modal__footer {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
   margin-top: 10px;
+}
+
+/* Botón Ver detalle */
+#openModal {
+  background-color: #ff69b4; /* rosa fuerte */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#openModal:hover {
+  background-color: #ff85c1;
+}
+
+/* Botón cerrar modal */
+#closeModal {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+#closeModal:hover {
+  background-color: #ff85c1;
+}
+
+/* Botón comprar y select */
+.btn-comprar {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-style: italic;
+  margin-top: 8px;
+}
+.btn-comprar:hover {
+  background-color: #ff85c1;
+}
+
+.opciones-pago {
+  margin-top: 8px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 :focus {
