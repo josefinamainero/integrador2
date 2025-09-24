@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Básquet Shop</title>
+  <meta name="description" content="Venta de elementos de básquet." />
+  <link rel="icon" href="favicon/pelota.ico" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a class="logo" href="#top"><strong>Básquet Shop</strong></a>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:josefinamainero1@gmail.com">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Lanzamiento 2025</h1>
+      <p>Descubrí nuestra nueva línea de productos de básquet. Calidad y diseño para todos.</p>
+      <button class="btn" id="openModal" aria-haspopup="dialog" aria-controls="dialog">Ver detalle</button>
+    </section>
+
+    <section id="productos" class="cards">
+
+      <article class="card">
+        <div class="card__media">
+          <img class="card__img" src="imagenes/arodebasquet.jpg" alt="Aro de básquet" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Aro de básquet</h3>
+          <p class="card__desc">Aro de alta resistencia, ideal para canchas y entrenamiento.</p>
+          <button class="btn btn-comprar">Comprar</button>
+          <select class="opciones-pago" hidden>
+            <option disabled selected>Seleccione un método de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+            <option>Depósito Bancario</option>
+            <option>Transferencia</option>
+            <option>Mercado Pago</option>
+          </select>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <div class="card__media">
+          <img class="card__img" src="imagenes/pelotadebasquet.jpg" alt="Pelota de básquet" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Pelota de básquet</h3>
+          <p class="card__desc">Pelota profesional para interior y exterior, excelente grip.</p>
+          <button class="btn btn-comprar">Comprar</button>
+          <select class="opciones-pago" hidden>
+            <option disabled selected>Seleccione un método de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+            <option>Depósito Bancario</option>
+            <option>Transferencia</option>
+            <option>Mercado Pago</option>
+          </select>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <div class="card__media">
+          <img class="card__img" src="imagenes/camiseta.jpg" alt="Camiseta de básquet" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Camiseta</h3>
+          <p class="card__desc">Camiseta ligera y transpirable, disponible en varios tamaños.</p>
+          <button class="btn btn-comprar">Comprar</button>
+          <select class="opciones-pago" hidden>
+            <option disabled selected>Seleccione un método de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+            <option>Depósito Bancario</option>
+            <option>Transferencia</option>
+            <option>Mercado Pago</option>
+          </select>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <div class="card__media">
+          <img class="card__img" src="imagenes/zapatillas.jpg" alt="Zapatillas de básquet" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Zapatillas</h3>
+          <p class="card__desc">Zapatillas con amortiguación y agarre superior para canchas.</p>
+          <button class="btn btn-comprar">Comprar</button>
+          <select class="opciones-pago" hidden>
+            <option disabled selected>Seleccione un método de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+            <option>Depósito Bancario</option>
+            <option>Transferencia</option>
+            <option>Mercado Pago</option>
+          </select>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <div class="card__media">
+          <img class="card__img" src="imagenes/tobillera.jpg" alt="Tobillera" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Tobillera</h3>
+          <p class="card__desc">Protección cómoda para prevenir lesiones durante el juego.</p>
+          <button class="btn btn-comprar">Comprar</button>
+          <select class="opciones-pago" hidden>
+            <option disabled selected>Seleccione un método de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+            <option>Depósito Bancario</option>
+            <option>Transferencia</option>
+            <option>Mercado Pago</option>
+          </select>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <div class="card__media">
+          <img class="card__img" src="imagenes/botella.jpg" alt="Botella de agua" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Botella de agua</h3>
+          <p class="card__desc">Botella resistente y reutilizable para mantenerte hidratado.</p>
+          <button class="btn btn-comprar">Comprar</button>
+          <select class="opciones-pago" hidden>
+            <option disabled selected>Seleccione un método de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+            <option>Depósito Bancario</option>
+            <option>Transferencia</option>
+            <option>Mercado Pago</option>
+          </select>
+        </div>
+      </article>
+    </section>
+
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cómo elijo mi talle de camiseta o zapatillas?</summary>
+        <p>Recomendamos medir tu pie o torso y consultar la tabla de talles. Si estás entre dos talles, elegir el mayor.</p>
+      </details>
+      <details>
+        <summary>¿Realizan envíos?</summary>
+        <p>Sí, realizamos envíos a todo el país con seguimiento del pedido.</p>
+      </details>
+      <details>
+        <summary>¿Qué métodos de pago aceptan?</summary>
+        <p>Aceptamos 3 y 6 cuotas con tarjetas de crédito, tarjetas de débito, bonificación de 15% con transferencias, depósitos bancarios y Mercado Pago.</p>
+      </details>
+      <details>
+        <summary>¿Puedo devolver un producto?</summary>
+        <p>Sí, dentro de los 15 días posteriores a la compra, siempre que el producto esté en condiciones originales.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer role="contentinfo">© 2025 Básquet Shop — <a href="#top">Volver arriba</a></footer>
+
+  <div class="modal" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+    <div class="modal__dialog">
+      <h2 id="dialogTitle">Detalle del lanzamiento</h2>
+      <p>Nueva colección de elementos de básquet con foco en calidad y diseño. Stock limitado.</p>
+      <div class="modal__footer">
+        <button class="btn" id="closeModal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+    const dialog = document.getElementById('dialog');
+
+    openBtn.addEventListener('click', () => {
+      dialog.style.display = 'flex';
+      dialog.querySelector('.modal__dialog').focus();
+    });
+    closeBtn.addEventListener('click', () => dialog.style.display = 'none');
+    window.addEventListener('click', (e) => { if(e.target === dialog) dialog.style.display = 'none'; });
+    window.addEventListener('keydown', (e) => { if(e.key === 'Escape') dialog.style.display = 'none'; });
+
+    document.querySelectorAll('.btn-comprar').forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        const select = document.querySelectorAll('.opciones-pago')[i];
+        select.hidden = !select.hidden;
+      });
+    });
+  </script>
+
+</body>
+</html>
